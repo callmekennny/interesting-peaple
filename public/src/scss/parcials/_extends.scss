@@ -1,0 +1,13 @@
+%center-element {
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+%btn-shared {
+  background-color: black;
+  font-family: inherit;
+  color: $font-white;
+  border: none;
+  padding: 1em 2em;
+  border-radius: 2rem;
+}

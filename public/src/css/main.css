@@ -1,0 +1,158 @@
+:root {
+  font-family: "Fira Sans", sans-serif;
+  line-height: 1.5;
+  font-size: 62.5%;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 2rem;
+  margin: inherit;
+  padding: inherit;
+  box-sizing: inherit;
+  line-height: 1.7;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.header-text {
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+.intro-btns button {
+  background-color: black;
+  font-family: inherit;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 1em 2em;
+  border-radius: 2rem;
+}
+
+.header {
+  color: rgb(255, 255, 255);
+  background-color: black;
+  padding: 2rem;
+  box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.header-text {
+  font-size: 4rem;
+}
+.header-text span {
+  color: rgb(255, 15, 15);
+}
+
+.intro-content {
+  max-width: 144rem;
+  margin: 20rem auto;
+}
+.intro-text {
+  max-width: 60rem;
+}
+.intro-btns {
+  margin-top: 3rem;
+  display: flex;
+  gap: 2rem;
+}
+.intro-btns button {
+  transition: all 0.2s ease-in-out;
+}
+.intro-btns button:hover, .intro-btns button:focus {
+  color: rgb(255, 15, 15);
+}
+
+.peaple {
+  max-width: 144rem;
+  margin: 0 auto;
+}
+.peaple-text {
+  max-width: 60rem;
+}
+.peaple .filter-btns {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  margin: 4rem 0;
+}
+.peaple .filter-btns-text {
+  color: rgb(51, 51, 51);
+}
+.peaple .filter-btns-list {
+  display: flex;
+  gap: 1.7rem;
+}
+.peaple .filter-btns button {
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  color: rgb(1, 1, 124);
+  font-size: inherit;
+  cursor: pointer;
+  padding: 0;
+}
+.peaple .peaple-grid-container {
+  margin: 7rem 0;
+}
+.peaple .peaple-grid-container .peaple-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr;
+  gap: 6rem;
+}
+.peaple .peaple-grid-container .peaple-grid-card {
+  min-height: 30rem;
+  border-radius: 2rem;
+  background-color: rgb(209, 209, 209);
+  display: flex;
+  overflow: hidden;
+}
+.peaple .peaple-grid-container .peaple-grid-card .card-image {
+  width: 35%;
+  min-height: 36rem;
+}
+.peaple .peaple-grid-container .peaple-grid-card .card-image img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+.peaple .peaple-grid-container .peaple-grid-card .card-text {
+  padding: 4rem;
+  max-width: 65%;
+  font-size: 1.6rem;
+  color: rgb(51, 51, 51);
+  box-sizing: border-box;
+}
+.peaple .peaple-grid-container .peaple-grid-card .card-text h3 {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  font-weight: 500;
+  color: rgb(24, 24, 24);
+}
+.peaple .peaple-grid-container .peaple-grid-card .card-text .known-for {
+  margin: 2rem 0;
+}
+
+footer {
+  padding: 1em;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+/*# sourceMappingURL=main.css.map */
