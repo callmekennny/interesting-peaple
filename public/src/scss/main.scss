@@ -36,8 +36,10 @@
     display: flex;
     gap: 2rem;
 
-    button {
+    a {
       @extend %btn-shared;
+      font-size: 1.6rem;
+      text-decoration: none;
       transition: all 0.2s ease-in-out;
 
       &:hover,
@@ -76,7 +78,7 @@
       border: none;
       background-color: transparent;
       font-family: inherit;
-      color: rgb(1, 1, 124);
+      color: $sort-btn-color;
       font-size: inherit;
       cursor: pointer;
       padding: 0;
@@ -90,12 +92,12 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-auto-rows: 1fr;
-      gap: 6rem;
+      gap: 7rem;
 
-      &-card {
+      .person {
         min-height: 30rem;
         border-radius: 2rem;
-        background-color: rgb(209, 209, 209);
+        background-color: rgb(228, 228, 228);
         display: flex;
         overflow: hidden;
 

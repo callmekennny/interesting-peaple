@@ -26,8 +26,8 @@
           </div>
 
           <div class="intro-btns">
-            <button>Show peaple</button>
-            <button>Manage peaple</button>
+            <a href="#people">Show peaple</a>
+            <a href="/pages/admin">Manage peaple</a>
           </div>
         </div>
       </section>
@@ -43,142 +43,46 @@
           <div class="filter-btns-text">Sort by:</div>
 
           <div class="filter-btns-list">
-            <button>All</button>
-            <button>🧠 Philosophers</button>
-            <button>🎭 Actors</button>
-            <button>👨‍💼 Businessman</button>
+            <button data-filter="all" class="filter-btn filter-btn--active">
+              All
+            </button>
+            <button data-filter="philosopher" class="filter-btn">
+              🧠 Philosophers
+            </button>
+            <button data-filter="actor" class="filter-btn">🎭 Actors</button>
+            <button data-filter="businessman" class="filter-btn">
+              👨‍💼 Businessman
+            </button>
           </div>
         </div>
 
         <section class="peaple-grid-container">
-          <div class="peaple-grid">
-            <div class="peaple-grid-card">
-              <div class="card-image">
-                <img src="./src/assets/peaple/cillian-murphy.jpg" alt="" />
+          <div class="peaple-grid" id="people">
+            <template class="peaple-grid-card" data-label="actor">
+              <div class="person">
+                <div class="card-image">
+                  <img src="" alt="" />
+                </div>
+
+                <article class="card-text">
+                  <h3 class="name">Cillian Murphy</h3>
+                  <div class="birth">
+                    born - <span class="birthday">25 May 1976</span>
+                  </div>
+
+                  <div class="known-for">
+                    Known for - <span class="occupation">Acting</span>
+                  </div>
+
+                  <p class="description">
+                    Cillian Murphy (KILL-ee-ən; born 25 May 1976) is an Irish
+                    actor. He made his professional debut in Enda Walsh's 1996
+                    play Disco Pigs, a role he later reprised in the 2001 screen
+                    adaptation.
+                  </p>
+                </article>
               </div>
-
-              <article class="card-text">
-                <h3 class="name">Cillian Murphy</h3>
-                <div class="birth">
-                  born - <span class="birthday">25 May 1976</span>
-                </div>
-
-                <div class="known-for">
-                  Known for - <span class="occupation">Acting</span>
-                </div>
-
-                <p class="description">
-                  Cillian Murphy (KILL-ee-ən; born 25 May 1976) is an Irish
-                  actor. He made his professional debut in Enda Walsh's 1996
-                  play Disco Pigs, a role he later reprised in the 2001 screen
-                  adaptation.
-                </p>
-              </article>
-            </div>
-
-            <div class="peaple-grid-card">
-              <div class="card-image">
-                <img src="./src/assets/peaple/elon-musk.jpg" alt="" />
-              </div>
-
-              <article class="card-text">
-                <h3 class="name">Elon Musk</h3>
-                <div class="birth">
-                  born - <span class="birthday">June 28, 1971</span>
-                </div>
-
-                <div class="known-for">
-                  Known for - <span class="occupation">Tesla, SpaceX</span>
-                </div>
-
-                <p class="description">
-                  Elon Reeve Musk (EE-lon; born June 28, 1971) is a businessman
-                  and investor. He is the founder, chairman, CEO, and CTO of
-                  SpaceX; angel investor, CEO, product architect, and former
-                  chairman of Tesla, Inc.; owner, executive chairman, and CTO of
-                  X Corp.; founder of the Boring Company and xAI; co-founder of
-                  Neuralink and OpenAI; and president of the Musk Foundation
-                </p>
-              </article>
-            </div>
-
-            <div class="peaple-grid-card">
-              <div class="card-image">
-                <img src="./src/assets/peaple/friedrich-nietzsche.jpg" alt="" />
-              </div>
-
-              <article class="card-text">
-                <h3 class="name">Friedrich Nietzsche</h3>
-                <div class="birth">
-                  born - <span class="birthday">15 October 1844</span>
-                </div>
-
-                <div class="known-for">
-                  Known for - <span class="occupation">philosophy</span>
-                </div>
-
-                <p class="description">
-                  Friedrich Wilhelm Nietzsche was a German philosopher. He began
-                  his career as a classical philologist before turning to
-                  philosophy. He became the youngest person to hold the Chair of
-                  Classical Philology at the University of Basel in 1869 at the
-                  age of 24.
-                </p>
-              </article>
-            </div>
-
-            <div class="peaple-grid-card">
-              <div class="card-image">
-                <img src="./src/assets/peaple/johann-van-goethe.jpg" alt="" />
-              </div>
-
-              <article class="card-text">
-                <h3 class="name">Johann Wolfgang von Goethe</h3>
-                <div class="birth">
-                  born - <span class="birthday">28 August 1749</span>
-                </div>
-
-                <div class="known-for">
-                  Known for - <span class="occupation">philosophy</span>
-                </div>
-
-                <p class="description">
-                  Johann Wolfgang (von) Goethe was a German polymath and writer,
-                  who is widely regarded as the greatest and most influential
-                  writer in the German language. His work has had a profound and
-                  wide-ranging influence on Western literary, political, and
-                  philosophical thought from the late 18th century to the
-                  present day.
-                </p>
-              </article>
-            </div>
-
-            <div class="peaple-grid-card">
-              <div class="card-image">
-                <img src="./src/assets/peaple/bruce-lee.jpg" alt="" />
-              </div>
-
-              <article class="card-text">
-                <h3 class="name">Bruce Lee</h3>
-                <div class="birth">
-                  born - <span class="birthday">November 27, 1940</span>
-                </div>
-
-                <div class="known-for">
-                  Known for -
-                  <span class="occupation"
-                    >martial artists, acting, philosophy</span
-                  >
-                </div>
-
-                <p class="description">
-                  Bruce Lee (Chinese:李小龍; born Lee Jun-fan,李振藩; November
-                  27, 1940 - July 20, 1973) was a Hong Kong-American martial
-                  artist and actor whose career spanned Hong Kong and the United
-                  States.
-                </p>
-              </article>
-            </div>
+            </template>
           </div>
         </section>
       </section>

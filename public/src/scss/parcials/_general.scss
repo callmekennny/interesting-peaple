@@ -32,3 +32,8 @@ p {
   margin: 0;
   padding: 0;
 }
+
+.filter-btn--active {
+  text-decoration: underline;
+  color: lighten($sort-btn-color, 20%);
+}

@@ -30,12 +30,17 @@ p {
   padding: 0;
 }
 
+.filter-btn--active {
+  text-decoration: underline;
+  color: #0202e1;
+}
+
 .header-text {
   max-width: 144rem;
   margin: 0 auto;
 }
 
-.intro-btns button {
+.intro-btns a {
   background-color: black;
   font-family: inherit;
   color: rgb(255, 255, 255);
@@ -69,10 +74,12 @@ p {
   display: flex;
   gap: 2rem;
 }
-.intro-btns button {
+.intro-btns a {
+  font-size: 1.6rem;
+  text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
-.intro-btns button:hover, .intro-btns button:focus {
+.intro-btns a:hover, .intro-btns a:focus {
   color: rgb(255, 15, 15);
 }
 
@@ -113,39 +120,39 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 1fr;
-  gap: 6rem;
+  gap: 7rem;
 }
-.peaple .peaple-grid-container .peaple-grid-card {
+.peaple .peaple-grid-container .peaple-grid .person {
   min-height: 30rem;
   border-radius: 2rem;
-  background-color: rgb(209, 209, 209);
+  background-color: rgb(228, 228, 228);
   display: flex;
   overflow: hidden;
 }
-.peaple .peaple-grid-container .peaple-grid-card .card-image {
+.peaple .peaple-grid-container .peaple-grid .person .card-image {
   width: 35%;
   min-height: 36rem;
 }
-.peaple .peaple-grid-container .peaple-grid-card .card-image img {
+.peaple .peaple-grid-container .peaple-grid .person .card-image img {
   width: 100%;
   display: block;
   height: 100%;
   object-fit: cover;
 }
-.peaple .peaple-grid-container .peaple-grid-card .card-text {
+.peaple .peaple-grid-container .peaple-grid .person .card-text {
   padding: 4rem;
   max-width: 65%;
   font-size: 1.6rem;
   color: rgb(51, 51, 51);
   box-sizing: border-box;
 }
-.peaple .peaple-grid-container .peaple-grid-card .card-text h3 {
+.peaple .peaple-grid-container .peaple-grid .person .card-text h3 {
   font-size: 2.5rem;
   line-height: 1.3;
   font-weight: 500;
   color: rgb(24, 24, 24);
 }
-.peaple .peaple-grid-container .peaple-grid-card .card-text .known-for {
+.peaple .peaple-grid-container .peaple-grid .person .card-text .known-for {
   margin: 2rem 0;
 }
 
