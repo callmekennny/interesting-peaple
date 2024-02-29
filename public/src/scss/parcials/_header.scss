@@ -1,0 +1,23 @@
+// header start
+.header {
+  &-text {
+    a {
+      color: $font-white;
+      text-decoration: none;
+    }
+
+    span {
+      color: $accent-red;
+    }
+
+    font-size: 4rem;
+    @extend %center-element;
+  }
+
+  color: $font-white;
+  background-color: black;
+  padding: 2rem;
+
+  box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.1);
+}
+// header end

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/css/edit-person.css" />
+    <title>Edit Person</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-text">
+        <a href="/">Interesting <span>peaple</span></a>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro">
+        <h2 class="title">Edit a person</h2>
+        <p>fill in the fields and submit to edit.</p>
+      </section>
+
+      <section class="new-person">
+        <form id="edit-form" class="loading-form">
+          <div class="input-block">
+            <input
+              id="name"
+              type="text"
+              placeholder="name"
+              class="form-field"
+            />
+          </div>
+          <div class="input-block">
+            <input
+              id="birthday"
+              type="text"
+              placeholder="birthday eg: 15 May 1998"
+              class="form-field"
+            />
+          </div>
+          <div class="input-block">
+            <select class="form-field" id="occupation">
+              <option>actor</option>
+              <option>philosopher</option>
+              <option>businessman</option>
+            </select>
+          </div>
+          <div class="input-block">
+            <textarea
+              id="description"
+              placeholder="description"
+              class="form-field"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn create-btn">Save Changes</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="/src/js/clientEditPerson.js"></script>
+  </body>
+</html>

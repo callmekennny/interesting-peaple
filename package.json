@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
-  "scripts": {
-    "sass-watch": "sass --watch public/src/scss/main.scss:public/src/css/main.css"
-  },
+  "scripts": {},
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mongodb": "^6.3.0"
+    "cookie": "^0.6.0",
+    "mongodb": "^6.3.0",
+    "sanitize-html": "^2.12.1"
   }
 }

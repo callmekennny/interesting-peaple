@@ -40,15 +40,6 @@ p {
   margin: 0 auto;
 }
 
-.intro-btns a {
-  background-color: black;
-  font-family: inherit;
-  color: rgb(255, 255, 255);
-  border: none;
-  padding: 1em 2em;
-  border-radius: 2rem;
-}
-
 .btn {
   background-color: black;
   font-family: inherit;
@@ -84,99 +75,100 @@ p {
   color: rgb(255, 15, 15);
 }
 
-.intro-content {
+.intro {
   max-width: 144rem;
-  margin: 20rem auto;
+  margin: 7rem auto;
 }
-.intro-text {
-  max-width: 60rem;
+.intro h2 {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.2;
 }
-.intro-btns {
-  margin-top: 3rem;
+.intro p {
+  color: rgb(80, 80, 80);
+  font-size: 1.6rem;
+}
+.intro .add-btn {
+  display: inline-block;
+  background-color: green;
+  margin: 4rem 0;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+.intro .add-btn-content {
   display: flex;
   gap: 2rem;
-}
-.intro-btns a {
-  font-size: 1.6rem;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-}
-.intro-btns a:hover,
-.intro-btns a:focus {
-  color: rgb(255, 15, 15);
+  align-items: center;
 }
 
-.peaple {
+#logout {
   max-width: 144rem;
   margin: 0 auto;
 }
-.peaple-text {
-  max-width: 60rem;
+
+#people-grid-container {
+  max-width: 144rem;
+  margin: 7rem auto;
 }
-.peaple .filter-btns {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  font-size: 1.5rem;
-  margin: 4rem 0;
-}
-.peaple .filter-btns-text {
-  color: rgb(80, 80, 80);
-}
-.peaple .filter-btns-list {
-  display: flex;
-  gap: 1.7rem;
-}
-.peaple .filter-btns button {
-  border: none;
-  background-color: transparent;
-  font-family: inherit;
-  color: rgb(1, 1, 124);
-  font-size: inherit;
-  cursor: pointer;
-  padding: 0;
-}
-.peaple .peaple-grid-container {
-  margin: 7rem 0;
-}
-.peaple .peaple-grid-container .peaple-grid {
+
+.peaple-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 1fr;
   gap: 7rem;
 }
-.peaple .peaple-grid-container .peaple-grid .person {
+.peaple-grid .still-loading {
+  animation: 0.6s loading-overlay ease-in-out alternate infinite;
+}
+.peaple-grid .person {
   min-height: 30rem;
   border-radius: 2rem;
   background-color: rgb(228, 228, 228);
   display: flex;
   overflow: hidden;
 }
-.peaple .peaple-grid-container .peaple-grid .person .card-image {
+.peaple-grid .person .card-image {
   width: 35%;
   min-height: 36rem;
 }
-.peaple .peaple-grid-container .peaple-grid .person .card-image img {
+.peaple-grid .person .card-image img {
   width: 100%;
   display: block;
   height: 100%;
   object-fit: cover;
 }
-.peaple .peaple-grid-container .peaple-grid .person .card-text {
+.peaple-grid .person .card-text {
   padding: 4rem;
   max-width: 65%;
   font-size: 1.6rem;
   color: rgb(80, 80, 80);
   box-sizing: border-box;
 }
-.peaple .peaple-grid-container .peaple-grid .person .card-text h3 {
+.peaple-grid .person .card-text h3 {
   font-size: 2.5rem;
   line-height: 1.3;
   font-weight: 500;
   color: rgb(24, 24, 24);
 }
-.peaple .peaple-grid-container .peaple-grid .person .card-text .known-for {
+.peaple-grid .person .card-text .known-for {
   margin: 2rem 0;
+}
+.peaple-grid .admin-btns {
+  display: flex;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+.peaple-grid .admin-btns a {
+  padding: 0;
+  background-color: transparent;
+  font-family: inherit;
+  color: rgb(0, 0, 163);
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.peaple-grid .admin-btns a:hover {
+  text-decoration: underline;
 }
 
 footer {
@@ -185,4 +177,14 @@ footer {
   font-size: 1.6rem;
   background-color: black;
   color: rgb(255, 255, 255);
+  margin-top: 7rem;
+}
+
+@keyframes loading-overlay {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
 }

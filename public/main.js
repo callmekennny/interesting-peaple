@@ -1,3 +1,5 @@
+// this whole program is a mess. will fix itself in time.
+
 const wrapper = document.createDocumentFragment();
 const personTemplate = document.querySelector(".peaple-grid-card");
 const peopleContainer = document.querySelector(".peaple-grid");
@@ -47,7 +49,7 @@ filterbtnList.addEventListener("click", async (e) => {
     e.target.classList.add("filter-btn--active");
 
     // show and hide depending the filter
-    document.querySelectorAll(".peaple-grid-card").forEach((person) => {
+    document.querySelectorAll(".person").forEach((person) => {
       if (person.dataset.label == filter || filter == "all") {
         person.style.display = "flex";
       } else {

@@ -1,0 +1,72 @@
+@import "./parcials/variables";
+@import "./parcials/general";
+@import "./parcials/shared";
+@import "./parcials/header";
+
+.intro {
+  max-width: 144rem;
+  margin: 7rem auto;
+
+  h2 {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  p {
+    color: $font-light;
+    font-size: 1.6rem;
+  }
+}
+
+.new-person {
+  max-width: 144rem;
+  margin: 4rem auto;
+
+  .input-block {
+    margin: 3rem 0;
+  }
+
+  .form-field {
+    display: block;
+    min-width: 60rem;
+    font-size: 1.6rem;
+    padding: 0.8em 1.5em;
+    font-family: inherit;
+    color: $font-light;
+    border: 1px solid rgb(194, 194, 194);
+  }
+
+  textarea.form-field {
+    resize: none;
+    min-height: 30rem;
+  }
+
+  .login-btn {
+    margin: 3rem 0;
+  }
+}
+
+.loading-form .form-field {
+  background-color: rgb(207, 207, 207);
+  color: rgb(207, 207, 207);
+  border: 1px solid rgb(207, 207, 207);
+}
+
+.form-field::placeholder {
+  color: rgb(207, 207, 207);
+}
+
+.loading-form {
+  animation: 1s loading-overlay ease-in-out alternate infinite;
+}
+
+@keyframes loading-overlay {
+  0% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

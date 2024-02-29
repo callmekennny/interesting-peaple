@@ -1,0 +1,14 @@
+{
+  "name": "public",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "sass-watch": "sass --watch --no-source-map src/scss/main.scss:src/css/main.css src/scss/admin.scss:src/css/admin.css  src/scss/login.scss:src/css/login.css src/scss/add-person.scss:src/css/add-person.css src/scss/edit-person.scss:src/css/edit-person.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.71.1"
+  }
+}

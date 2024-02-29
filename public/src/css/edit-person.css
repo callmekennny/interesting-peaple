@@ -1,0 +1,137 @@
+:root {
+  font-family: "Fira Sans", sans-serif;
+  line-height: 1.5;
+  font-size: 62.5%;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 2rem;
+  margin: inherit;
+  padding: inherit;
+  box-sizing: inherit;
+  line-height: 1.7;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.filter-btn--active {
+  text-decoration: underline;
+  color: #0202e1;
+}
+
+.header-text {
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: black;
+  font-family: inherit;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 1em 2em;
+  border-radius: 2rem;
+}
+
+.btn-link {
+  background-color: black;
+  font-family: inherit;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 1em 2em;
+  border-radius: 2rem;
+}
+
+.header {
+  color: rgb(255, 255, 255);
+  background-color: black;
+  padding: 2rem;
+  box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.header-text {
+  font-size: 4rem;
+}
+.header-text a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.header-text span {
+  color: rgb(255, 15, 15);
+}
+
+.intro {
+  max-width: 144rem;
+  margin: 7rem auto;
+}
+.intro h2 {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.intro p {
+  color: rgb(80, 80, 80);
+  font-size: 1.6rem;
+}
+
+.new-person {
+  max-width: 144rem;
+  margin: 4rem auto;
+}
+.new-person .input-block {
+  margin: 3rem 0;
+}
+.new-person .form-field {
+  display: block;
+  min-width: 60rem;
+  font-size: 1.6rem;
+  padding: 0.8em 1.5em;
+  font-family: inherit;
+  color: rgb(80, 80, 80);
+  border: 1px solid rgb(194, 194, 194);
+}
+.new-person textarea.form-field {
+  resize: none;
+  min-height: 30rem;
+}
+.new-person .login-btn {
+  margin: 3rem 0;
+}
+
+.loading-form .form-field {
+  background-color: rgb(207, 207, 207);
+  color: rgb(207, 207, 207);
+  border: 1px solid rgb(207, 207, 207);
+}
+
+.form-field::placeholder {
+  color: rgb(207, 207, 207);
+}
+
+.loading-form {
+  animation: 1s loading-overlay ease-in-out alternate infinite;
+}
+
+@keyframes loading-overlay {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
