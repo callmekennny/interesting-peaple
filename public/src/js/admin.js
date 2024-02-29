@@ -10,12 +10,6 @@ async function checkLoginCookie() {
   } else {
     window.location = "/login";
   }
-
-  setInterval(() => {
-    if (!data.success) {
-      window.location = "/login";
-    }
-  }, 100);
 }
 
 checkLoginCookie();
